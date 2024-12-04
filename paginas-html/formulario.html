@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../proyecto-estilos/styles.css" type="text/css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <header>
+        <div class="header-style">
+            <a href="index.html">
+                <img src="../imagenes-equipo/escudo.png" class="header-image">
+            </a>
+            <ul class="lista-header">
+                <li><a href="plantilla.html">Nuestra plantilla</a></li>
+                <li><a href="tienda.html">Nuestra tienda</a></li>
+                <li><a href="calendario.html">Calendario de partidos</a></li>
+                <li><a href="formulario.html">Formulario para contacto</a></li>
+            </ul>  
+        </div>
+    </header>
+    <h1>Formulario para contacto</h1>
+    <form method="GET" action="index.html" class="formulario-contacto">
+        <div>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" size="20" required><br><br>
+        </div>
+        <div>
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" size="20" required><br><br>
+        </div>
+        <div>
+            <label for="cedula">Cedula: </label>
+            <input type="number" id="cedula" name="cedula" required><br><br>
+        </div>
+        <div>
+            <label for="correo">Correo: </label>
+            <input type="email" id="correo" name="correo" size="20" required><br><br>
+        </div>
+        <div>
+            <label for="numerocel">Número de celular: </label>
+            <input type="number" id="numerocel" name="numerocel" required><br><br>
+        </div>
+        <div>
+            <label for="datenacimiento">Fecha de nacimiento: </label>
+            <input type="date" id="datenacimiento" name="nacimiento" required>
+        </div>
+        <div class="color-equipo">
+            <label for="color-equipo">Seleccione el color del mas grande: </label>
+            <input type="color" id="color-equipo" name="color-equipo" value="#00ff00" required>
+        </div>
+        <div>
+            <p>¿Eres hincha?</p>
+            <input type="radio" id="hinchasi" name="radiohincha" required>
+            <label for="hinchasi">Sí</label>
+            <input type="radio" id="hinchano" name="radiohincha" required>
+            <label for="hinchano">No</label><br><br>
+        </div>
+        <div>
+            <label for="motivo-contacto">Motivo de contacto: </label>
+            <select id="motivo-contacto" name="motivo-contacto" required>
+                <option value="" disabled selected>Selecciona un motivo: </option>
+                <option value="comentarios">Comentarios</option>
+                <option value="informacion">Solicitud de informacion</option>
+                <option value="queja">Queja</option>
+            </select>
+        </div>
+        <div>
+            <label for="seleccion-abono">Suba una foto de su cédula: </label>
+            <input type="file" name="seleccion-abono" id="seleccion-abono" required>
+        </div>
+        <button type="submit" class="boton-submit">Enviar formulario</button>
+    </form>
+    <footer>
+        <div class="contenido-footer">
+            <p class="parrafo-footer">© 2024 Atlético Nacional. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
